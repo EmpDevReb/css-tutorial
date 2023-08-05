@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* We Solid Borders here */
+        p.one {
+            border-style: solid;
+            border-width: 10px;
+        }
+
+        /* We Solid Borders here with no pixels just word */
+        p.two {
+            border-style: solid;
+            border-width: medium;
+        }
+
+        /* We Dotted Pixels */
+        p.three {
+            border-style: dotted;
+            border-width: 3px;
+        }
+
+        /* We Dotted Pixels that thicc */
+        p.four {
+            border-style: dotted;
+            border-width: thick;
+        }
+
+        /* We Double Pixels thicc */
+        p.five {
+            border-style: double;
+            border-width: 20px;
+        }
+
+        /* We Double Pixels thicc with text and instead of pixels*/
+        p.six {
+            border-style: double;
+            border-width: thick;
+        }
+
+        p.seven {
+            border-style: solid;
+            border-width: 10px 20px;
+            /* 10px top and bottom, 20px on the sides */
+        }
+
+        p.eight {
+            border-style: solid;
+            border-width: 15px 10px;
+            /* 15px top and bottom, 10px on the sides */
+        }
+
+        p.nine {
+            border-style: solid;
+            border-width: 30px 15px 7px 40px;
+            /* 30px top, 15px right, 7px bottom and 40px left */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>The border-width Property</h2>
+    <p>This property specifies the width of the four borders:</p>
+
+    <p class="one">We Dying to Format!</p>
+    <p class="two">We Dying to Format!</p>
+    <p class="three">We Dying to Format!</p>
+    <p class="four">We Dying to Format!</p>
+    <p class="five">We Dying to Format!</p>
+    <p class="six">We Dying to Format!</p>
+    <p class="seven">We Dying to Format!</p>
+    <p class="eight">We Dying to Format!</p>
+    <p class="nine">We Dying to Format!</p>
+
+    <p><b>Note:</b> The "border-width" property does not work if it is used alone.
+        Always specify the "border-style" property to set the borders first.</p>
+
+</body>
+
+</html>

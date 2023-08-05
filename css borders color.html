@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* Basic Style Sheet for border colors */
+        p.one {
+            border-style: solid;
+            border-color: red;
+        }
+
+        p.two {
+            border-style: solid;
+            border-color: green;
+        }
+
+        p.three {
+            border-style: dotted;
+            border-color: blue;
+        }
+        /*  We can do color per side how the comment next colors says */
+        p.four {
+            border-style: dotted;
+            border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+        }
+        /* Hex Value color. We can do the same with RGB and HSL Value this way for style. */
+        p.five {
+            border-style: solid;
+            border-color: #ff0030; /* red*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>The border-color Property</h2>
+    <p>This property specifies the color of the four borders:</p>
+
+    <p class="one">A solid red border</p>
+    <p class="two">A solid green border</p>
+    <p class="three">A dotted blue border</p>
+    <p class="four">A four colored dotted border</p>
+    <p class="five">Defined by Hex Value(can do the same with RBG and HSL Values instead) </p>
+    
+
+    <p><b>Note:</b> The "border-color" property does not work if it is used alone. Use the "border-style" property to
+        set the borders first.</p>
+
+</body>
+
+</html>

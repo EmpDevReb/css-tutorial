@@ -1,0 +1,9 @@
+/* This is External CSS for being able to change a whole website looks with one file! */
+body {
+  background-color: lightgrey;
+}
+
+h1 {
+  color: blue;
+  margin-left: 30px;
+}

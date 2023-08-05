@@ -1,0 +1,9 @@
+/* This is singl-line comment for css "ctrl /" is how to make a line comment in VScode */
+p {
+    color: blueviolet
+        /* This is blueviolet text. This is anywhere in the CSS code */
+}
+
+/* we can make mutliple lines 
+of 
+comments */
