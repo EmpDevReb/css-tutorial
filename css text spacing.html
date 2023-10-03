@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* The letter-spacing property is used to specify 
+        the space between the characters in a text. */
+        h2 {
+            letter-spacing: 7px;
+            /* This Increases spacing */
+        }
+
+        h3 {
+            letter-spacing: -3px;
+            /* This Decreases spacing */
+        }
+
+        /* The text-indent property is used to specify 
+        the indentation of the first line of a text: */
+        p {
+            text-indent: 50px;
+        }
+
+        /* The line-height property is used to specify the space between lines */
+        p.small {
+            line-height: 0.4;
+            /* This line height small for our purposes  */
+        }
+
+        p.big {
+            line-height: 2.1;
+            /* This line height big for our purposes  */
+        }
+
+        /* The word-spacing property is used to specify the space between the words in a text. */
+        p.one {
+            word-spacing: 12px;
+            /* Pixel Word spacing */
+        }
+
+        p.two {
+            word-spacing: -4px;
+            /* Pixel Word spacing */
+        }
+
+        p.whitespace {
+            white-space: nowrap; /* wrap will cause it wrap around */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Using letter-spacing</h1>
+
+    <h2>This is heading 1</h2>
+    <h3>This is heading 2</h3>
+
+    <h1>Using text-indent</h1>
+
+    <p>In my younger and more vulnerable years I died.
+        Then revived. Then DIED AGAIN.
+        To redie again and again and again '</p>
+
+    <p class="normal">This is a paragraph with a standard line-height.<br>
+        The default line height in most browsers is about 110% to 120%.</p>
+
+    <p class="small">
+        This is a paragraph with a smallerrrsss line-heightssss.<br>
+        This is a paragraph with a smallerrrsss line-heightssss.<br>
+    </p>
+
+    <p class="big">
+        This is a paragraph with a biggeressers line-heightssdss.<br>
+        This is a paragraph with a biggeressers line-heightssdss.<br>
+    </p>
+
+    <h1>Using word-spacing</h1>
+
+    <p>This is a paragraph with normal word spacing.</p>
+
+    <p class="one">This is a paragraph with larger word spacing.</p>
+
+    <p class="two">This is a paragraph with smaller word spacing.</p>
+
+    <h1>Using white-space</h1>
+
+    <p class="whitespace">
+        This is some text that will not wrapss.
+        This is some text that will not wrapss.
+        This is some text that will not wrapsss.
+        This is some text that will not wraps.
+        This is some text that will not wrapss.
+        This is some text that will not wraps.
+        This is some text that will not wraps.
+        This is some text that will not wraps.
+        This is some text that will not wraps.
+    </p>
+</body>
+
+</html>
