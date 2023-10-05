@@ -19,21 +19,31 @@
             /* oblique - The text is "leaning" (oblique is very similar to italic, but less supported) */
             font-style: oblique;
         }
-
+        /* The font-weight property specifies the weight of a font: */
         p.normal1 {
+            /* This is the normal font weight */
             font-weight: normal;
         }
-
+            /* This is lighter font weight */
         p.light {
             font-weight: lighter;
         }
-
+            /* This is the bold font weight */
         p.thick {
             font-weight: bold;
         }
-
+            /* This is the font weight by a number for precision */
         p.thicker {
-            font-weight: 900;
+            font-weight: 800;
+        }
+        /* The font-variant property specifies whether or not a text should be displayed in a small-caps font. */
+        p.normal2 {
+            /* This is the normal font variant */
+            font-variant: normal;
+        }
+        p.small {
+            /* This is the small caps font variant */
+            font-variant: small-caps;
         }
     </style>
 </head>
@@ -48,10 +58,15 @@
 
     <h1>The font-weight property</h1>
 
-    <p class="normal">This is a paragraph.</p>
+    <p class="normal1">This is a paragraph.</p>
     <p class="light">This is a paragraph.</p>
     <p class="thick">This is a paragraph.</p>
     <p class="thicker">This is a paragraph.</p>
+
+    <h1>The font-variant property</h1>
+
+    <p class="normal2">My name is Hegssss RefRENNSS.</p>
+    <p class="small">My name is Hegsssss RefRENNSS.</p>
 
 </body>
 

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<!-- Can use the default px for pixel size font-size input but also 16pixel=em calucuation is for broswers defaults size  -->
+<!-- This makes a view port for responsive content. -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <style>
+        body {
+            /* Using percentages for font-size input */
+            font-size: 100%;
+        }
+
+        h1 {
+            /* Using em for font-size input */
+            font-size: 4.5em;
+        }
+
+        h2 {
+            /* Using px for pixel for font-size input */
+            font-size: 45px;
+        }
+            /* This is responsive text scaling to the viewport I set up early */
+        p {
+            font-size: 5vw;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <h1>This is heading 1</h1>
+    <h2>This is heading 2</h2>
+    <p>This is a paragraph.</p>
+    <p>Specifying the font-size in percent and em displays the same size in all major browsers,
+        and allows all browsers
+        to resize the text!</p>
+
+</body>
+
+</html>

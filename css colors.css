@@ -1,0 +1,15 @@
+/* We can do text colors by name */
+    /* <h1 style="color:goldenrod;">Blue Worlds</h1> */
+    h1 {
+        color:goldenrod
+    }
+    /*  And borders colors  */
+    /* <h2 style="border:2px solid navy;">Blue Border Worlds </h2> */
+    h2 {
+        border:2px solid navy
+    }
+    /* And backgrounds colors */
+    /* <h3 style="background-color:grey;">RGB </h3> */
+    h3 {
+        background-color: grey 
+    }
