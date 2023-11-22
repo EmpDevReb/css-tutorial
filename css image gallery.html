@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<!-- This is image gallery made by CSS -->
+<head>
+    <style>
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+        /* This making clicking on image full sized. */
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="gallery">
+        <a target="_blank" href="TOP GUNS.jpg">
+            <img src="TOP GUNS.jpg" alt="Gun" width="600" height="600">
+        </a>
+        <div class="desc">TOP GUN</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="TopGunCrusie.jpg">
+            <img src="TopGunCrusie.jpg" alt="Crusie" width="600" height="600">
+        </a>
+        <div class="desc">CRUSIE</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="Top Gun Waifu.jpg">
+            <img src="Top Gun Waifu.jpg" alt="Waifu" width="600" height="600">
+        </a>
+        <div class="desc">Waifu</div>
+    </div>
+
+</body>
+<!-- https://www.w3schools.com/css/css_image_gallery.asp for more on responsive image gallery -->
+</html>

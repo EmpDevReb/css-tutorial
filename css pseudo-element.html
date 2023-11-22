@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<!-- What are Pseudo-Elements?
+A CSS pseudo-element is used to style specified parts of an element.
+
+For example, it can be used to:
+
+Style the first letter, or line, of an element
+Insert content before, or after, the content of an element -->
+
+<head>
+    <style>
+        /* This makes the first line the color and font selected */
+        p::first-line {
+            color: crimson;
+            font-variant: small-caps;
+
+        }
+
+        /* This makes the first letter the the color and font selected */
+        p::first-letter {
+            color: goldenrod;
+            font-size: xx-large;
+        }
+
+        /* Makes something first letter of class ID. */
+        p.intro::first-letter {
+            color: navy;
+            font-size: 200%;
+        }
+
+        /* Combing on line and on first letter. */
+        p.combo::first-letter {
+            color: orange;
+            font-size: xx-large;
+        }
+
+        p.combo::first-line {
+            color: darkblue;
+            font-variant: small-caps;
+        }
+
+        /* Inserting Content before heading. */
+        h1::before {
+            content: url(Unlimitedpow.jpg);
+        }
+
+        /* Inserting Content after heading. */
+        h1::after {
+            content: url(Unlimitedpow.jpg);
+        }
+
+        /* The ::marker pseudo-element selects the markers of list items.
+        The following example styles the markers of list items: */
+        ::marker {
+            color: purple;
+            font-size: 22px;
+        }
+
+        /* The ::selection pseudo-element matches the portion of an element that is selected by a user.
+        The following CSS properties can be applied to ::selection: color, background, cursor, and outline.
+        The following example makes the selected text red on a yellow background: */
+        ::selection {
+            color: darkred;
+            background: goldenrod;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more text.
+        And even more, and more, and more, and more, and more, and more, and more, and more, and more, and more, and
+        more, and more.</p>
+
+    <p>You can use the ::first-letter pseudo-element to add a special effect to the first character of a text!</p>
+
+    <p class="intro">This is an introduction.</p>
+    <p>This is a paragraph with some text. A bit more text even.</p>
+
+    <p class="combo">You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect to the
+        first letter and the first line of a text!</p>
+
+    <h1>This is a heading</h1>
+    <p>The ::before pseudo-element inserts content before or after the content of an element.</p>
+
+    <h1>This is a heading</h1>
+
+    <ul>
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Milk</li>
+    </ul>
+
+    <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ol>
+
+    <h1>Select some text on this page:</h1>
+
+    <p>This is a paragraph.</p>
+    <div>This is some text in a div element.</div>
+</body>
+
+<!-- Link to more pseudo-elements options at the bottom of page: https://www.w3schools.com/css/css_pseudo_elements.asp -->
+</html>

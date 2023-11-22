@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<!-- Basic CSS table set up -->
+
+<head>
+    <style>
+        /* Making it full width */
+        table {
+            /* Can change the width to 50% to narrow the area the table takes up. */
+            width: 100%;
+            /* The border-collapse property sets whether the table borders should be collapsed into a single border */
+            border-collapse: collapse;
+        }
+
+        /* If th and td are removed only the outer border will remain. */
+        table,
+        th,
+        td {
+            border: 2px solid;
+        }
+
+        /* This adds hight on stuff. */
+        th {
+            height: 75px;
+        }
+
+        /* We are aligning the text with this style to center on all collums */
+        td {
+            /* We Commeted out this section just do show it can be done along with align right or left.  */
+            /* text-align: center; */
+            /* This is vertical-align: */
+            height: 50px;
+            vertical-align: bottom;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>A table of Costs:</h2>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Thing</th>
+            <th>Cost</th>
+        </tr>
+        <tr>
+            <td>Bob's</td>
+            <td>Toys</td>
+            <td>$100Mil</td>
+        </tr>
+        <tr>
+            <td>Danna's</td>
+            <td>Toy</td>
+            <td>$101Mil</td>
+        </tr>
+        <tr>
+            <td>Robbs's</td>
+            <td>CD</td>
+            <td>$2Mil</td>
+        </tr>
+    </table>
+
+</body>
+<!-- More options can be learned from this link for style https://www.w3schools.com/css/css_table_style.asp -->
+</html>

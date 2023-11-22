@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Block-level Elements
+
+    A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
+        
+    The <div> element is a block-level element.
+    Examples of block-level elements:
+        
+    <div>
+    <h1> - <h6>
+    <p>
+    <form>
+    <header>
+    <footer>
+    <section> -->
+
+<!-- Inline Elements
+    
+    An inline element does not start on a new line and only takes up as much width as necessary.
+        
+    This is an inline <span> element inside a paragraph.
+        
+    Examples of inline elements:
+        
+    <span>
+    <a>
+    <img> -->
+
+<head>
+    <style>
+        /* This is how to display inline stuff. */
+        li {
+            display: inline;
+        }
+
+        /* Usiing span to make a block display. */
+        span {
+            display: block;
+        }
+
+        a {
+            display: block;
+        }
+
+        h1.hidden {
+            /* This just doesn't display what's there. Like it doesn't exist at all */
+            display: none;
+        }
+
+        h1.hidden1 {
+            /* This just doesn't display what's there. But does leave blank line of where it should be. */
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>Display a list of links as a horizontal menu:</p>
+
+    <ul>
+        <li><a href="/html/default.asp" target="_blank">BLAHA</a></li>
+        <li><a href="/css/default.asp" target="_blank">CASSSS</a></li>
+        <li><a href="/js/default.asp" target="_blank">JAVACOFFEE</a></li>
+    </ul>
+
+    <h1>Display span elements as block elements</h1>
+
+    <span>A display property with</span> <span>a value of "block" results in</span> <span>a line break between each span
+        elements.</span>
+
+
+
+    <h1>Display links as block elements</h1>
+    <!-- This block display of links. -->
+    <a href="/html/default.asp" target="_blank">HTMLssss</a>
+    <a href="/css/default.asp" target="_blank">CSScscsssss</a>
+    <a href="/js/default.asp" target="_blank">JavaScriptSSSS or SCRIPT</a>
+
+    <h1>This is a visible heading</h1>
+    <!-- This will not show. -->
+    <h1 class="hidden">This is a hidden heading</h1>
+    <p>Notice that the h1 element with display: none; does not take up any space.</p>
+
+    <h1>This is a visible heading</h1>
+    <!-- This doesn't show but still takes up the line -->
+    <h1 class="hidden1">This is a hidden heading</h1>
+    <p>Notice that the hidden heading still takes up space.</p>
+</body>
+
+</html>

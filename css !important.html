@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<!-- What is !important?
+
+The !important rule in CSS is used to add more importance to a property/value than normal.
+In fact, if you use the !important rule, it will override ALL previous styling rules for that specific property on that element! -->
+
+<head>
+    <style>
+        #myid {
+            background-color: navy;
+        }
+
+        /* We can over ride !important with another important */
+        .myclass {
+            background-color: grey !important;
+        }
+
+        p {
+            background-color: crimson !important;
+        }
+
+        /* To "force" all buttons to have the same look, no matter what, 
+        we can add the !important rule to the properties of the butto */
+        .button {
+            background-color: #8c8c8c !important;
+            color: white !important;
+            padding: 5px !important;
+            border: 1px solid black !important;
+        }
+
+        #myDiv a {
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>This TEXTOOSS.</p>
+
+    <p class="myclass">This is some text para parappra graph.</p>
+
+    <p id="myid">This is dead papparrap graph</p>
+
+    <p>Standard button: <a class="button" href="default.asp">CSS Tutorial</a></p>
+
+    <div id="myDiv">
+        <p>A link text inside myDiv: <a href="/html/">HTML Tutorial</a></p>
+        <p>A link button inside myDiv: <a href="/html/" class="button">HTML Tutorial</a></p>
+    </div>
+
+</body>
+
+<!-- All three paragraphs will get a red background color, 
+    even though the ID selector and the class selector have a higher specificity. 
+    The !important rule overrides the background-color property in both cases. -->
+
+<!-- Important About !important
+The only way to override an !important rule is to include another 
+!important rule on a declaration with the same (or higher) specificity in the source code - and here the problem starts! 
+This makes the CSS code confusing and the debugging will be hard, especially if you have a large style sheet -->
+
+<!-- Recomended not to do this. -->

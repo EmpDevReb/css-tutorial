@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<!-- To horizontally center a block element (like <div>), use margin: auto;
+
+    Setting the width of the element will prevent it from stretching out to the edges of its container.
+    
+    The element will then take up the specified width, and the remaining space will be split equally between the two margins: -->
+
+<head>
+    <style>
+        /* Center align */
+        .center {
+            margin: auto;
+            width: 60%;
+            border: 3px solid #2136ad;
+            padding: 10px;
+        }
+
+        /* The Text is centered. */
+        .centertext {
+            text-align: center;
+            border: 3px solid rosybrown;
+        }
+
+        /* Image is centered */
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Right align via position */
+        /* Can do the same with with left instead. */
+        .right {
+            position: absolute;
+            right: 0px;
+            width: 300px;
+            border: 3px solid #73AD21;
+            padding: 10px;
+        }
+
+        /* Right align via float */
+        /* Quote the above text and quote the below text to see both work. */
+        /* Can do the same with with left instead. */
+        /* .right {
+            float: right;
+            width: 300px;
+            border: 3px solid #73AD21;
+            padding: 10px;
+        } */
+        /* Showing Clearfix hack */
+        div {
+            border: 3px solid #4CAF50;
+            padding: 5px;
+        }
+
+        .img1 {
+            float: right;
+        }
+
+        .img2 {
+            float: right;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        /* This is centering text via padding. */
+        .centerpadding {
+
+            padding: 70px 0;
+            border: 3px solid rgb(9, 0, 128);
+        }
+
+        /* Another trick is to use the line-height 
+        property with a value that is equal to the height property: */
+        .centerpadding1 {
+            line-height: 200px;
+            height: 200px;
+            border: 3px solid rgb(107, 0, 128);
+            text-align: center;
+        }
+
+        .centerp {
+            line-height: 1.5;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        /* If padding and line-height are not options, 
+        another solution is to use positioning and the transform property: */
+        .centerposition {
+            height: 200px;
+            position: relative;
+            border: 3px solid rgb(128, 0, 79);
+        }
+
+        .centertrans {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        /* You can also use flexbox to center things. 
+        Just note that flexbox is not supported in IE10 and earlier versions: */
+        .centerflexbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            border: 3px solid rgb(128, 66, 0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Center Align Elements</h2>
+    <p>To horizontally center a block element (like div), use margin: auto;</p>
+
+    <div class="center">
+        <p>Hello GALAXY!</p>
+    </div>
+
+    <h2>Center Text</h2>
+
+    <div class="centertext">
+        <p>This text is centered.</p>
+    </div>
+
+    <h2>Center an Image</h2>
+    <p>To center an image, set left and right margin to auto, and make it into a block element.</p>
+
+    <img src="TopGunCrusie.jpg" alt="Crusie" style="width:40%">
+
+    <h2>Right align with the position or float property</h2>
+
+    <p>An example of how to right align elements with the position or float property:</p>
+
+    <div class="right">
+        <p>In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind
+            ever since.</p>
+    </div>
+
+    <h2>Without Clearfix</h2>
+
+    <p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of
+        its container:</p>
+
+    <div>
+        <img class="img1" src="TOP GUNS.jpg" alt="Top" width="170" height="170">
+        I FEEL THE NEED FOR SPEEDDDDDDDDDDDDDDDDD
+    </div>
+
+    <h2 style="clear:right">With New Modern Clearfix</h2>
+    <p>Add the clearfix hack to the containing element, to fix this problem:</p>
+
+    <div class="clearfix">
+        <img class="img2" src="TOP GUNS.jpg" alt="Top" width="170" height="170">
+        I FEEL THE NEED FOR SPEEDDDDDDDDDDDDDDDDD
+    </div>
+
+    <h2>Center vertically with padding</h2>
+
+    <p>In this example, we use the padding property to center the div element vertically:</p>
+
+    <div class="centerpadding">
+        <p>I am vertically centered.</p>
+    </div>
+
+    <h2>Center with line-height</h2>
+
+    <p>In this example, we use the line-height property with a value that is equal to the height property to center the
+        div element:</p>
+
+    <div class="centerpadding1">
+        <p class="centerp">I am vertically and horizontally centered.</p>
+    </div>
+
+    <h2>Center with position and transform</h2>
+
+    <p>In this example, we use positioning and the transform property to vertically and horizontally center the div
+        element:</p>
+
+    <div class="centerposition">
+        <p class="centertrans">I am vertically and horizontally centered.</p>
+    </div>
+
+    <h2>Flexbox Centering</h2>
+
+    <p>A container with both the justify-content and the align-items properties set to <em>center</em> will align the
+        item(s) in the center (in both axis).</p>
+
+    <div class="centerflexbox">
+        <p>I am vertically and horizontally centered.</p>
+    </div>
+
+
+
+
+</body>
+
+</html>

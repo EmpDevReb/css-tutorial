@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<!-- CSS counters are "variables" maintained by CSS whose values can be incremented by CSS rules (to track how many times they are used). Counters let you adjust the appearance of content based on its placement in the document. -->
+
+<!-- Automatic Numbering With Counters
+CSS counters are like "variables". The variable values can be incremented by CSS rules (which will track how many times they are used).
+
+To work with CSS counters we will use the following properties:
+
+counter-reset - Creates or resets a counter
+counter-increment - Increments a counter value
+content - Inserts generated content
+counter() or counters() function - Adds the value of a counter to an element
+To use a CSS counter, it must first be created with counter-reset. -->
+
+<head>
+    <style>
+        /* Reset Counter CSS */
+        body {
+            counter-reset: section;
+        }
+
+        /* Adding Nesting Counter CSS */
+        h1 {
+            counter-reset: subsection;
+        }
+
+        /* More  */
+        h1::before {
+            counter-increment: section;
+            content: "Section " counter(section) ". ";
+        }
+
+        /* Counter CSS */
+        h2::before {
+            counter-increment: section;
+            content: "Section " counter(section) ": ";
+        }
+        /* CSS Counter for lists */
+        ol {
+            counter-reset: section;
+            list-style-type: none;
+        }
+
+        li::before {
+            counter-increment: section;
+            content: counters(section, ".") " ";
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML/CSS Tutorialsss</h1>
+    <h2>HTMLs</h2>
+    <h2>CSSSSSSSSSSSSSSSS</h2>
+    <h2>Bootstraps</h2>
+    <h2>W3ds.CSSsssss</h2>
+
+    <h1>Scripters Tutor</h1>
+    <h2>JavaSsssssss</h2>
+    <h2>jQuer</h2>
+    <h2>Reactsss</h2>
+
+    <h1>Program Tut</h1>
+    <h2>Python Sank</h2>
+    <h2>Java Java</h2>
+    <h2>C++++++_+++</h2>
+
+    <!-- ITEMSS -->
+    <ol>
+        <li>items</li>
+        <li>itemssss   
+        <ol>
+          <li>itemsss</li>
+          <li>itemsss</li>
+          <li>itemsss
+          <ol>
+            <li>item</li>
+            <li>item</li>
+            <li>itemsss</li>
+          </ol>
+          </li>
+          <li>item</li>
+        </ol>
+        </li>
+        <li>dom</li>
+        <li>item</li>
+      </ol>
+      
+      <ol>
+        <li>doom</li>
+        <li>item</li>
+      </ol>
+
+</body>
+
+</html>

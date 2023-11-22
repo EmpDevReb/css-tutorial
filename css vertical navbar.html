@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<!-- To build a vertical navigation bar, you can style the <a> elements inside the list, 
+in addition to the code from the previous page: -->
+<head>
+    <style>
+        /* display: block; - Displaying the links as block elements makes the whole link area clickable (not just the text), 
+        and it allows us to specify the width (and padding, margin, height, etc. if you want)
+width: 70px; - Block elements take up the full width available by default. We want to specify a 70 pixels width */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            /* Can set width this way too */
+            /* width: 70px; */
+        }
+
+        li a {
+            display: block;
+            width: 70px;
+            background-color: #8c8484;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li><a href="#Bang">Bang</a></li>
+        <li><a href="#Rack">Rack</a></li>
+        <li><a href="#Tap">Tap</a></li>
+        <li><a href="#Shoot">Shoot</a></li>
+    </ul>
+
+    <p>A background color is added to the links to show the link area.</p>
+    <p>Notice that the whole link area is clickable, not just the text.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<!-- The opacity property specifies the opacity/transparency of an element. -->
+
+<head>
+    <style>
+        /* this is opacity value setting how faded out the picture is. 1 is no fade. 0 is max(you won't see picture). */
+        img {
+            opacity: 0.5;
+        }
+
+        /* Now when we hover over the image it will not be faded. */
+        img:hover {
+            opacity: 1.0;
+        }
+
+        /* We can do the reverse so when you hover on picture it is faded */
+        /* Quote above CSS and unquote this CSS to see it working. */
+        /* img:hover {
+            opacity: 0.5;
+        } */
+
+        /* We can do the same opacity on effect of a div element */
+        /* Can use RGBA for opacity as well */
+        div {
+            background-color: #4c7daf;
+            padding: 12px;
+        }
+
+        div.first {
+            opacity: 0.1;
+        }
+
+        div.second {
+            opacity: 0.3;
+        }
+
+        div.third {
+            opacity: 0.6;
+        }
+
+        /* This is putting a tranparent box in a picture. */
+        div.background {
+            background: url(A330.png) repeat;
+            border: 2px solid black;
+        }
+
+        div.transbox {
+            margin: 30px;
+            background-color: #ffffff;
+            border: 1px solid black;
+            opacity: 0.6;
+        }
+
+        div.transbox p {
+            margin: 5%;
+            font-weight: bold;
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Image Transparency</h1>
+    <p>The opacity property specifies the transparency of an element. The lower the value, the more transparent:</p>
+
+    <p>Image with 50% opacity but when hovering over pict it's not:</p>
+    <img src="TOP GUNS.jpg" alt="Top" width="170" height="170">
+
+    <h1>Image Transparency</h1>
+    <p>The opacity property is often used together with the :hover selector to change the opacity on mouse-over:</p>
+    <img class="hov1" src="TopGunCrusie.jpg" alt="Crusie" width="170" height="170">
+
+    <h1>Transparent Box</h1>
+    <p>When using the opacity property to add transparency to the background of an element, all of its child elements
+        become transparent as well. This can make the text inside a fully transparent element hard to read:</p>
+
+    <div class="first">
+        <p>opacity 0.1</p>
+    </div>
+    <div class="second">
+        <p>opacity 0.3</p>
+    </div>
+    <div class="third">
+        <p>opacity 0.6</p>
+    </div>
+    <div>
+        <p>opacity 1 (default)</p>
+    </div>
+
+    <div class="background">
+        <div class="transbox">
+            <p>This is some text that is placed in the transparent box.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

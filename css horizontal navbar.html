@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        /* This style sheet is how to make horzontal navbar. */
+
+        /* float: left; - Use float to get block elements to float next to each other
+        display: block; - Allows us to specify padding (and height, width, margins, etc. if you want)
+        padding: 8px; - Specify some padding between each <a> element, to make them look good
+        background-color: #dddddd; - Add a gray background-color to each <a> element */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            /* Adds Background color */
+            background-color: #dddddd;
+        }
+
+        /* A adding borders between links in navbar*/
+        li {
+            float: left;
+            border-right: 2px solid #bbbbbb;
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            padding: 8px;
+            background-color: #b9b1b1;
+        }
+
+        /* This added hover color */
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        /* Define active color */
+        .active {
+            background-color: #04AA6D;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#Bang">Bang</a></li>
+        <li><a href="#Rack">Rack</a></li>
+        <li><a href="#Tap">Tap</a></li>
+        <li><a href="#Shoot">Shoot</a></li>
+        <!-- This  element is told to right align -->
+        <li style="float:right"><a class="active" href="#about">About</a></li>
+    </ul>
+
+    <p><b>Note:</b> If a !DOCTYPE is not specified, floating items can produce unexpected results.</p>
+    <p>A background color is added to the links to show the link area. The whole link area is clickable, not just the
+        text.</p>
+    <p><b>Note:</b> overflow:hidden is added to the ul element to prevent li elements from going outside of the list.
+    </p>
+
+</body>
+<!-- More nav bar options are shown in https://www.w3schools.com/css/css_navbar_horizontal.asp Responsive a key one to look up. -->
+</html>

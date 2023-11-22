@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        ul.a {
+            /* This is styling of the bullet points for unordered lists */
+            list-style-type: circle;
+        }
+
+        ul.b {
+            list-style-type: square;
+        }
+
+        ol.c {
+            /* This is styling of the bullet points for ordered lists */
+            list-style-type: upper-roman;
+        }
+
+        ol.d {
+            list-style-type: lower-alpha;
+        }
+
+        /* This to link a url of an image via short hand */
+        ul.e {
+            list-style-image: url('purple-square-symbols.gif');
+        }
+
+        ul.f {
+            list-style-position: outside;
+        }
+
+        ul.g {
+            list-style-position: inside;
+        }
+
+        /* The list-style-type:none property can also be used to remove the markers/bullets. 
+        Note that the list also has default margin and padding. To remove this, add margin:0 and padding:0 to <ul> or <ol>: */
+        ul.demo {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        /* This is showing how you can color and style with different colors a list. */
+        ol.n {
+            background: #ff8888;
+            padding: 20px;
+        }
+
+        ul.N {
+            background: #4488ff;
+            padding: 20px;
+        }
+
+        ol li.l {
+            background: #ffe6e6;
+            color: crimson;
+            padding: 5px;
+            margin-left: 35px;
+        }
+
+        ul li.L {
+            background: #cce6ff;
+            color: navy;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>The list-style-type Property</h2>
+
+    <p>An Examples of unordered lists:</p>
+    <ul class="a">
+        <li>COFFEEEE</li>
+        <li>Sweet Tea</li>
+        <li>Soda Soda</li>
+    </ul>
+
+    <ul class="b">
+        <li>COOOFFEEE</li>
+        <li>Iced Tea</li>
+        <li>Bepis Bepis</li>
+    </ul>
+
+    <p>An Example of ordered lists:</p>
+    <ol class="c">
+        <li>COFFEEEE</li>
+        <li>Sweet Tea</li>
+        <li>Soda Soda</li>
+    </ol>
+
+    <ol class="d">
+        <li>COOOFFEEE</li>
+        <li>Iced Teass</li>
+        <li>Bepis Bepis</li>
+    </ol>
+
+    <h2>The list-style-image Property</h2>
+
+    <p>The list-style-image property specifies an image as the list item marker:</p>
+    <!-- ID this list so it would stay separte from the yres.  -->
+    <ul class="e">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <h1>The list-style-position Property</h1>
+
+    <h2>list-style-position: outside (default):</h2>
+    <!-- "list-style-position: outside;" means that the bullet points will be outside the list item. 
+        The start of each line of a list item will be aligned vertically. This is default: -->
+    <ul class="f">
+        <li>Coffee - A mistress you can't give up and will keep you forever in her dark embrace to stay awake.</li>
+        <li>Tea - An aromatic beverage commonly given to weaklings that can't do coffee.</li>
+        <li>Coca Cola - Soda pop that is not as caffeine intensive as coffee and has way to much sugar.</li>
+    </ul>
+    <!-- "list-style-position: inside;" means that the bullet points will be inside the list item. 
+        As it is part of the list item, it will be part of the text and push the text at the start: -->
+    <h2>list-style-position: inside:</h2>
+    <ul class="g">
+        <li>Coffee - A mistress you can't give up and will keep you forever in her dark embrace to stay awake.</li>
+        <li>Tea - An aromatic beverage commonly given to weaklings that can't do coffee.</li>
+        <li>Coca Cola - Soda pop that is not as caffeine intensive as coffee and has way to much sugar.</li>
+    </ul>
+
+    <p>Remove bullets, margin and padding from list:</p>
+    <!-- Showing how how the list looks when all default formatting is removed. -->
+    <ul class="demo">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+    <!-- This is showing how you can color and style with different colors a list. -->
+    <ol class="n">
+        <li class="l">Coffeeeeeee</li>
+        <li class="l">TeaAAA</li>
+        <li class="l">Coca ColAA</li>
+    </ol>
+
+    <ul class="N">
+        <li class="L">Coffeeeeeee</li>
+        <li class="L">TeaAAA</li>
+        <li class="L">Coca ColAA</li>
+    </ul>
+
+
+</body>
