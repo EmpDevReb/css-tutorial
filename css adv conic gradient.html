@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<!-- CSS Conic Gradients
+A conic gradient is a gradient with color transitions rotated around a center point.
+To create a conic gradient you must define at least two colors. -->
+
+<head>
+    <style>
+        /* Conic Gradient: Three Colors
+        The following example shows a conic gradient with three colors: */
+        #grad1 {
+            height: 200px;
+            width: 200px;
+            background-color: crimson;
+            /* For browsers that do not support gradients */
+            background-image: conic-gradient(red, goldenrod, yellowgreen);
+        }
+
+        /* Conic Gradient: Five Colors
+        The following example shows a conic gradient with five colors */
+        #grad2 {
+            height: 200px;
+            width: 200px;
+            background-color: crimson;
+            /* For browsers that do not support gradients */
+            background-image: conic-gradient(crimson, goldenrod, yellowgreen, navy, black);
+        }
+
+        /* Conic Gradient: Three Colors and Degrees
+        The following example shows a conic gradient with three colors and a degree for each color: */
+        #grad3 {
+            height: 200px;
+            width: 200px;
+            background-color: crimson;
+            /* For browsers that do not support gradients */
+            background-image: conic-gradient(crimson 45deg, goldenrod 90deg, yellowgreen 210deg);
+        }
+
+        #grad4 {
+            height: 200px;
+            width: 200px;
+            background-color: crimson;
+            /* For browsers that do not support gradients */
+            background-image: conic-gradient(crimson, goldenrod, yellowgreen, navy, black);
+            border-radius: 50%;
+        }
+
+        /* Here is another pie chart with defined degrees for all the colors */
+        #grad5 {
+            height: 200px;
+            width: 200px;
+            background-color: crimson;
+            /* For browsers that do not support gradients */
+            background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+            border-radius: 50%;
+        }
+
+        /* Conic Gradient With Specified From Angle
+        The [from angle] specifies an angle that the entire conic gradient is rotated by.
+        The following example shows a conic gradient with a from angle of 90deg: */
+        #grad6 {
+            height: 200px;
+            width: 200px;
+            background-color: crimson;
+            /* For browsers that do not support gradients */
+            background-image: conic-gradient(from 90deg, crimson, goldenrod, yellowgreen);
+            border-radius: 50%;
+        }
+
+        /* Conic Gradient With Specified Center Position
+        The [at position] specifies the center of the conic gradient.
+        The following example shows a conic gradient with a center position of 60% 45%: */
+
+        #grad7 {
+            height: 200px;
+            width: 200px;
+            background-color: crimson;
+            /* For browsers that do not support gradients */
+            background-image: conic-gradient(at 60% 45%, crimson, goldenrod, yellowgreen);
+            border-radius: 50%;
+        }
+
+        /* Repeating a Conic Gradient
+        The repeating-conic-gradient() function is used to repeat conic gradients: */
+
+        #grad8 {
+            height: 200px;
+            width: 200px;
+            background-color: crimson;
+            /* For browsers that do not support gradients */
+            background-image: repeating-conic-gradient(crimson 10%, goldenrod 20%);
+            border-radius: 50%;
+        }
+
+        /* Here is a repeating conic gradient with defined color-starts and color-stops: */
+        #grad9 {
+            height: 200px;
+            width: 200px;
+            background-color: crimson;
+            /* For browsers that do not support gradients */
+            background-image: repeating-conic-gradient(crimson 0deg 10deg, yellowgreen 10deg 20deg, navy 20deg 30deg);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Conic Gradient - Three Colors</h1>
+
+    <div id="grad1"></div>
+
+    <h1>Conic Gradient - Five Colors</h1>
+
+    <div id="grad2"></div>
+
+    <h1>Conic Gradient - Defined degree for each color</h1>
+
+    <div id="grad3"></div>
+
+    <h1>Conic Gradient - Pie Chart</h1>
+
+    <div id="grad4"></div>
+
+    <h1>Conic Gradient - Pie Chart</h1>
+
+    <div id="grad5"></div>
+
+    <h1>Conic Gradient - With a from angle</h1>
+
+    <div id="grad6"></div>
+
+    <h1>Conic Gradient - With a specified center position</h1>
+
+    <div id="grad7"></div>
+
+    <h1>Repeating a Conic Gradient</h1>
+
+    <div id="grad8"></div>
+
+    <h1>Repeating a Conic Gradient with color-starts and -stops</h1>
+
+    <div id="grad9"></div>
+
+</body>
+
+</html>

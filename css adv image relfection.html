@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<!-- CSS Image Reflections
+The box-reflect property is used to create an image reflection.
+The value of the box-reflect property can be: below, above, left , or right. -->
+<head>
+    <style>
+        img.reflectbelow {
+            -webkit-box-reflect: below;
+        }
+
+        /* Reflect to the right */
+        img.reflectright {
+            -webkit-box-reflect: right;
+        }
+
+        /* Reflect with offset. */
+        img.reflectoffset {
+            -webkit-box-reflect: below 10px;
+        }
+
+        /* Relfect with gradient */
+        img.reflectgrad {
+            -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4));
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Image Reflection</h1>
+
+    <p>Show the reflection below the image:</p>
+    <img class="reflectbelow" src="Top Gun Waifu.jpg">
+
+    <h1>CSS Image Reflection</h1>
+
+    <p>Show the reflection to the right of the image:</p>
+    <img class="reflectright" src="Top Gun Waifu.jpg">
+
+    <h1>CSS Image Reflection</h1>
+
+    <p>Show the reflection below the image, with a 10 pixels offset:</p>
+    <img class="reflectoffset" src="Top Gun Waifu.jpg">
+
+    <h1>CSS Image Reflection</h1>
+
+    <p>Show the reflection with gradient (to make a fade-out effect):</p>
+    <img class="reflectgrad" src="Top Gun Waifu.jpg">
+
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<!-- CSS box-shadow Property
+The CSS box-shadow property is used to apply one or more shadows to an element. -->
+
+<head>
+    <style>
+        div.box1 {
+            width: 300px;
+            height: 100px;
+            padding: 15px;
+            background-color: goldenrod;
+            box-shadow: 10px 10px;
+        }
+
+        /* Specify a Color for the Shadow
+        The color parameter defines the color of the shadow. */
+        div.box2 {
+            width: 300px;
+            height: 100px;
+            padding: 15px;
+            background-color: goldenrod;
+            box-shadow: 10px 10px lightblue;
+        }
+
+        /* Add a Blur Effect to the Shadow
+        The blur parameter defines the blur radius. The higher the number, the more blurred the shadow will be */
+        div.box3 {
+            width: 300px;
+            height: 100px;
+            padding: 15px;
+            background-color: goldenrod;
+            box-shadow: 10px 10px 5px lightblue;
+        }
+
+        /* Set the Spread Radius of the Shadow
+        The spread parameter defines the spread radius. A positive value increases the size of the shadow, a negative value decreases the size of the shadow. */
+        div.box4 {
+            width: 300px;
+            height: 100px;
+            padding: 15px;
+            background-color: goldenrod;
+            box-shadow: 10px 10px 5px 12px lightblue;
+        }
+
+        /* Set the inset Parameter
+        The inset parameter changes the shadow from an outer shadow (outset) to an inner shadow. */
+        div.box5 {
+            width: 300px;
+            height: 100px;
+            padding: 15px;
+            background-color: goldenrod;
+            box-shadow: 10px 10px 5px lightblue inset;
+        }
+
+        /* Add Multiple Shadows
+        An element can also have multiple shadows: */
+        #example1 {
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+            margin: 20px;
+        }
+
+        #example2 {
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green;
+            margin: 20px;
+        }
+
+        /* Making a Card */
+        div.card {
+            width: 250px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+        }
+
+        div.header {
+            background-color: #4cacaf;
+            color: white;
+            padding: 10px;
+            font-size: 40px;
+        }
+
+        div.container {
+            padding: 10px;
+        }
+
+        /* Making a card with Image */
+        div.polaroid {
+            width: 250px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+        }
+
+        div.container1 {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The box-shadow Property</h1>
+
+    <div class="box1">This is a div element with a box-shadow</div>
+
+    <h1>The box-shadow Property</h1>
+
+    <div class="box2">A div element with a lightblue box-shadow</div>
+
+    <h1>The box-shadow Property</h1>
+
+    <div class="box3">A div element with a 5px blurred, lightblue box-shadow.</div>
+
+    <h1>The box-shadow Property</h1>
+
+    <div class="box4">A div element with a blurred, lightblue box-shadow, with a spread radius of 12px.</div>
+
+    <h1>The box-shadow Property</h1>
+
+    <div class="box5">A div element with a blurred, lightblue, inset box-shadow.</div>
+
+    <h1>Multiple Shadows</h1>
+
+    <div id="example1">
+        <h2>Multiple shadows</h2>
+        <p>box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green:</p>
+    </div>
+    <br>
+
+    <div id="example2">
+        <h2>Multiple shadows with blur effect</h2>
+        <p>box-shadow: 5px 5px 8px blue, 10px 10px 8px red, 15px 15px 8px green:</p>
+    </div>
+
+    <h1>Create Cards</h1>
+
+    <p>The box-shadow property can be used to create paper-like cards:</p>
+
+    <div class="card">
+        <div class="header">
+            <h1>1</h1>
+        </div>
+
+        <div class="container">
+            <p>January 23, 2023</p>
+        </div>
+    </div>
+
+    <h1>Create Polaroid Images</h1>
+
+    <p>The box-shadow property can be used to create polaroid images:</p>
+
+    <div class="polaroid">
+        <img src="TOP GUNS.jpg" alt="TopGun" style="width:100%">
+        <div class="container1">
+            <p>TOPGUNSSSS</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

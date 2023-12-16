@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<!-- The CSS border-radius property defines the radius of an element's corners. -->
+<head>
+    <style>
+        #rcorners1 {
+            /* border radius defined */
+            border-radius: 40px;
+            background: #868a14;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #rcorners2 {
+            border-radius: 20px;
+            /* wiht Solid */
+            border: 2px solid #2198ad;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #rcorners3 {
+            border-radius: 23px;
+            /* With background */
+            background: url(Unlimitedpow.jpg);
+            background-position: left top;
+            background-repeat: repeat;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #rcorners4 {
+            /* Four values */
+            /* Below the first value applies to top-left corner, 
+            second value applies to top-right corner, 
+            third value applies to bottom-right corner, 
+            and fourth value applies to bottom-left corner */
+            border-radius: 15px 50px 30px 5px;
+            background: #ada821;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #rcorners5 {
+            /* Three values */
+            /* Below the first value applies to top-left corner, 
+            second value applies to top-right and bottom-left corners, 
+            and third value applies to bottom-right corner */
+            border-radius: 15px 50px 30px;
+            background: #2149ad;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #rcorners6 {
+            /* Two values */
+            /*Below the first value applies to top-left and bottom-right corners, 
+            and the second value applies to top-right and bottom-left corners */
+            border-radius: 15px 50px;
+            background: #6521ad;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #rcorners7 {
+            /* One value */
+            /*Below the value applies to all four corners, which are rounded equally */
+            border-radius: 15px;
+            background: #ad2123;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        /* The border-radius property is actually a 
+        shorthand property for the border-top-left-radius, 
+        border-top-right-radius, 
+        border-bottom-right-radius 
+        and border-bottom-left-radius properties. */
+
+        /* Elliptical borders */
+        #rcorners8 {
+            border-radius: 50px / 15px;
+            background: #21a1ad;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #rcorners9 {
+            border-radius: 15px / 50px;
+            background: #ad212a;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #rcorners10 {
+            border-radius: 50%;
+            background: #ad7c21;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The border-radius Property</h1>
+
+    <p>Rounded corners for an element with a specified background color:</p>
+    <p id="rcorners1">Rounded corners!</p>
+    <p>Rounded corners for an element with a border:</p>
+    <p id="rcorners2">Rounded corners!</p>
+    <p>Rounded corners for an element with a background image:</p>
+    <p id="rcorners3">Rounded corners!</p>
+
+    <h1>The border-radius Property</h1>
+
+    <p>Four values - border-radius: 15px 50px 30px 5px:</p>
+    <p id="rcorners4"></p>
+
+    <p>Three values - border-radius: 15px 50px 30px:</p>
+    <p id="rcorners5"></p>
+
+    <p>Two values - border-radius: 15px 50px:</p>
+    <p id="rcorners6"></p>
+
+    <p>One value - border-radius: 15px:</p>
+    <p id="rcorners7"></p>
+
+    <h1>The border-radius Property</h1>
+
+    <p>Elliptical border - border-radius: 50px / 15px:</p>
+    <p id="rcorners8"></p>
+
+    <p>Elliptical border - border-radius: 15px / 50px:</p>
+    <p id="rcorners9"></p>
+
+    <p>Ellipse border - border-radius: 50%:</p>
+    <p id="rcorners10"></p>
+
+</body>
+
+</html>
