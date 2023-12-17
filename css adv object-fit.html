@@ -1,1 +1,87 @@
+<!DOCTYPE html>
+<html>
+
 <!-- The CSS object-fit property is used to specify how an <img> or <video> should be resized to fit its container. -->
+<!-- The CSS object-fit Property
+The CSS object-fit property is used to specify how an <img> or <video> should be resized to fit its container.
+This property tells the content to fill the container in a variety of ways; such as "preserve that aspect ratio" or "stretch up and take up as much space as possible". -->
+
+<!-- Here is where the object-fit property comes in. The object-fit property can take one of the following values:
+
+fill - This is default. The image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit
+contain - The image keeps its aspect ratio, but is resized to fit within the given dimension
+cover - The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit
+none - The image is not resized
+scale-down - the image is scaled down to the smallest version of none or contain -->
+
+<head>
+    <style>
+        /* Using object-fit: cover;
+        If we use object-fit: cover; the image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit: */
+        img.object-cover {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        /* Using object-fit: contain;
+        If we use object-fit: contain; the image keeps its aspect ratio, but is resized to fit within the given dimension: */
+        img.object-contain {
+            width: 200px;
+            height: 300px;
+            object-fit: contain;
+        }
+
+        /* Using object-fit: fill;
+        If we use object-fit: fill; the image is resized to fill the given dimension. If necessary, the image will be stretched or squished to fit: */
+        img.object-fill {
+            width: 200px;
+            height: 300px;
+            object-fit: fill;
+        }
+
+        /* Using object-fit: none;
+        If we use object-fit: none; the image is not resized: */
+        img.object-none {
+            width: 200px;
+            height: 300px;
+            object-fit: none;
+        }
+
+        /* Using object-fit: scale-down;
+        If we use object-fit: scale-down; the image is scaled down to the smallest version of none or contain: */
+        img.scale-down {
+            width: 200px;
+            height: 300px;
+            object-fit: scale-down;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Using object-fit: cover</h2>
+
+    <img class="object-cover" src="TopGunCrusie.jpg" alt="Top" width="400" height="300">
+
+    <h2>Using object-fit: contain</h2>
+
+    <img class="object-contain" src="TopGunCrusie.jpg" alt="Top" width="400" height="300">
+
+    <h2>Using object-fit: fill</h2>
+
+    <img class="object-fill" src="TopGunCrusie.jpg" alt="Top" width="400" height="300">
+
+    <h2>Using object-fit: none</h2>
+
+    <img class="object-none" src="TopGunCrusie.jpg" alt="Top" width="400" height="300">
+
+    <h2>Using object-fit: scale-down</h2>
+
+    <img class="scale-down" src="TopGunCrusie.jpg" alt="Top" width="400" height="300">
+
+    <!-- More Object fill options at: https://www.w3schools.com/css/css3_object-fit.asp -->
+
+</body>
+
+</html>
