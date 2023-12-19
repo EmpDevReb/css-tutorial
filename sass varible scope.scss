@@ -1,0 +1,10 @@
+$myColor: crimson;
+
+h1 {
+    $myColor: yellowgreen;
+    color: $myColor;
+}
+
+p {
+    color: $myColor;
+}

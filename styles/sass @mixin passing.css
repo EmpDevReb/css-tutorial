@@ -1,0 +1,8 @@
+/* Define mixin with two arguments */
+.myArticle {
+  border: 1px solid navy;
+}
+
+.myNotes {
+  border: 2px solid crimson;
+}/*# sourceMappingURL=sass @mixin passing.css.map */

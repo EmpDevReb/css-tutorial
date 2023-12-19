@@ -1,0 +1,63 @@
+<!-- CSS Multi-column Layout
+The CSS multi-column layout allows easy definition of multiple columns of text - just a newspaper -->
+
+<!-- CSS Create Multiple Columns
+The column-count property specifies the number of columns an element should be divided into.
+
+The following example will divide the text in the <div> element into 3 columns -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .blog {
+            column-count: 3;
+            /* CSS Specify the Gap Between Columns
+            The column-gap property specifies the gap between the columns.
+            The following example specifies a 40 pixels gap between the columns */
+            column-gap: 40px;
+            /* CSS Column Rules
+            The column-rule-style property specifies the style of the rule between columns */
+            column-rule-style: solid;
+            /* The column-rule-width property specifies the width of the rule between columns */
+            column-rule-width: 3px;
+            /* The column-rule-color property specifies the color of the rule between columns */
+            column-rule-color: lightsalmon;
+            /* The column-rule property is a shorthand property for setting all the column-rule-* properties above */
+            /* column-rule: 3px solid lightsalmon; */
+
+            /* Specify The Column Width
+            The column-width property specifies a suggested, optimal width for the columns.
+            The following width for the columns is 100px */
+            /* column-width: 100px */
+        }
+
+        h2 {
+            column-span: all;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Set the Rule Color</h1>
+
+    <div class="blog">
+        <h2>BANG BANG BANG BANGBANG BANG BANG!!! </h2>
+        BLOCK BANG BLOCK BOKC BANG BOING BOCKAHNDOGA DOG BLOCK BANG BLOCK BOKC BANG BOING BOCKAHNDOGA DOGBLOCK BANG
+        BLOCK BOKC BANG BOING BOCKAHNDOGA DOG
+        BLOCK BANG BLOCK BOKC BANG BOING BOCKAHNDOGA DOG BLOCK BANG BLOCK BOKC BANG BOING BOCKAHNDOGA DOGBLOCK BANG
+        BLOCK BOKC BANG BOING BOCKAHNDOGA DOGBLOCK BANG BLOCK BOKC BANG BOING BOCKAHNDOGA DOG
+        BLOCK BANG BLOCK BOKC BANG BOING BOCKAHNDOGA DOG BLOCK BANG BLOCK BOKC BANG BOING BOCKAHNDOGA DOGBLOCK BANG
+        BLOCK BOKC BANG BOING BOCKAHNDOGA DOGBLOCK BANG BLOCK BOKC BANG BOING BOCKAHNDOGA DOG
+        BLOCK BANG BLOCK BOKC BANG BOING BOCKAHNDOGA DOG BLOCK BANG BLOCK BOKC BANG BOING BOCKAHNDOGA DOGBLOCK BANG
+        BLOCK BOKC BANG BOING BOCKAHNDOGA DOG BLOCK BANG BLOCK BOKC BANG BOING BOCKAHNDOGA DOG
+        BLOCK BANG BLOCK BOKC BANG BOING BOCKAHNDOGA DOG BLOCK BANG BLOCK BOKC BANG BOING BOCKAHNDOGA DOGBLOCK BANG
+        BLOCK BOKC BANG BOING BOCKAHNDOGA DOGBLOCK BANG BLOCK BOKC BANG BOING BOCKAHNDOGA DOG
+        BLOCK BANG BLOCK BOKC BANG BOING BOCKAHNDOGA DOG BLOCK BANG BLOCK BOKC BANG BOING BOCKAHNDOGA DOG
+    </div>
+
+</body>
+
+</html>

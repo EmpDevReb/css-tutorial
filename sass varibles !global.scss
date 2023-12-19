@@ -1,0 +1,15 @@
+// Using Sass !global
+// The default behavior for variable scope can be overridden by using the !global switch.
+// !global indicates that a variable is global, which means that it is accessible on all levels.
+// Look at the following example (same as above; but with !global added)
+$myColor: goldenrod;
+
+h1 {
+    // This overrides the mycolor.
+    $myColor: yellowgreen !global;
+    color: $myColor;
+}
+
+p {
+    color: $myColor;
+}

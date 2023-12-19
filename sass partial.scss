@@ -1,0 +1,7 @@
+@import "colors";
+// Now, if you import the partial file, omit the underscore. Sass understands that it should import the file "_colors.scss"
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  color: $myBlue;
+}

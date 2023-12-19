@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Simple Pagination
+If you have a website with lots of pages, you may wish to add some sort of pagination to each page: -->
+
+<head>
+    <style>
+        body {
+            background-color: white;
+        }
+
+        /* align the pagination in the center */
+        .center {
+            text-align: center;
+        }
+
+        .pagination {
+            display: inline-block;
+        }
+
+        .pagination a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            /* For hovering over pageinations */
+            transition: background-color .3s;
+            /* Adding Borders */
+            border: 1px solid #ddd;
+            /* Add the margin property if you do not want to group the page links */
+            margin: 0 4px;
+            /* Change the size of the pagination with the font-size property */
+            font-size: 18px;
+        }
+
+        /* Adding a Hover elements for the active and hoverable Pagination */
+        .pagination a.active {
+            background-color: #152d67;
+            color: white;
+            /* Adding border radius for rounding. */
+            border-radius: 5px;
+        }
+
+        .pagination a:hover:not(.active) {
+            background-color: #ddd;
+            /* Adding border radius for rounding. */
+            border-radius: 5px;
+        }
+
+        /* Add rounded borders to your first and last link in the pagination */
+        .pagination a:first-child {
+            /* Defining the Left Corners are rounded */
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+
+        .pagination a:last-child {
+            /* Defining the Right Corners are rounded  */
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+        .pagination1 {
+            display: inline-block;
+        }
+
+        .pagination1 a {
+            color: black;
+            float: left;
+            padding: 8px 16px;
+            text-decoration: none;
+            transition: background-color .3s;
+            border: 1px solid #ddd;
+        }
+
+        .pagination1 a.active {
+            background-color: #979525;
+            color: white;
+            border: 1px solid #979525;
+        }
+
+        .pagination1 a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        /* Another variation of pagination is so-called "breadcrumbs" */
+        ul.breadcrumb {
+            padding: 8px 16px;
+            list-style: none;
+            background-color: #eee;
+        }
+
+        ul.breadcrumb li {
+            display: inline;
+        }
+
+        ul.breadcrumb li+li:before {
+            padding: 8px;
+            color: black;
+            content: "/\00a0";
+        }
+
+        ul.breadcrumb li a {
+            color: crimson;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Centered Pagination</h2>
+
+    <div class="center">
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="#">1</a>
+            <a href="#" class="active">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">5</a>
+            <a href="#">6</a>
+            <a href="#">&raquo;</a>
+        </div>
+    </div>
+
+    <p>Next/Previous buttons:</p>
+    <div class="pagination1">
+        <a href="#">❮</a>
+        <a href="#">❯</a>
+    </div>
+
+    <p>Navigation pagination:</p>
+    <div class="pagination1">
+        <a href="#" class="active">Home</a>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+
+    <h2>Breadcrumb Pagination</h2>
+
+    <ul class="breadcrumb">
+        <li><a href="#">Pew</a></li>
+        <li><a href="#">Pic</a></li>
+        <li><a href="#">City 17</a></li>
+        <li>Combine</li>
+    </ul>
+
+</body>
+
+</html>

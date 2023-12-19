@@ -1,0 +1,55 @@
+<!-- Advantages of using var() are:
+makes the code easier to read (more understandable)
+makes it much easier to change the color values
+To change the blue and white color to a softer blue and white, you just need to change the two variable values -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        :root {
+            --blue: #6495ed;
+            --white: #faf0e6;
+        }
+
+        body {
+            background-color: var(--blue);
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--blue);
+        }
+
+        .container {
+            color: var(--blue);
+            background-color: var(--white);
+            padding: 15px;
+        }
+
+        button {
+            background-color: var(--white);
+            color: var(--blue);
+            border: 1px solid var(--blue);
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Using the var() Function</h1>
+
+    <div class="container">
+        <h2>Boom Bomb KBoomb</h2>
+        <p>Bangaokdakfjda dakfdhahf bagokn boom bom andage Bangaokdakfjda dakfdhahf bagokn boom bom andageBangaokdakfjda dakfdhahf bagokn boom bom andage</p>
+        <p>Bangaokdakfjda dakfdhahf bagokn boom bom andage Bangaokdakfjda dakfdhahf bagokn boom bom andageBangaokdakfjda dakfdhahf bagokn 
+            boom bom andage.</p>
+        <p>
+            <button>Yes</button>
+            <button>No</button>
+        </p>
+    </div>
+
+</body>
+
+</html>

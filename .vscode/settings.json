@@ -1,0 +1,15 @@
+{
+    "liveSassCompile.settings.useNewCompiler": false,
+    "liveSassCompile.settings.includeItems": [],
+    "liveSassCompile.settings.forceBaseDirectory": "",
+    "liveSassCompile.settings.autoprefix": [],
+    "liveSassCompile.settings.formats": [
+        
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/styles" ,
+            "savePathReplacementPairs": null
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+<!-- The CSS mask-image Property
+The CSS mask-image property specifies a mask layer image.
+The mask layer image can be a PNG image, an SVG image, a CSS gradient, or an SVG <mask> element. -->
+
+<!DOCTYPE html>
+<html>
+
+<!-- Use an Image as the Mask Layer
+To use a PNG or an SVG image as the mask layer, use a url() value to pass in the mask layer image.
+The mask image needs to have a transparent or semi-transparent area. Black indicates fully transparent.
+Here is the mask image (a PNG image) we will use: -->
+
+<head>
+    <style>
+        .mask1 {
+            -webkit-mask-image: url(w3logo.png);
+            mask-image: url(w3logo.png);
+            -webkit-mask-repeat: no-repeat;
+            mask-repeat: no-repeat;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>The mask-image Property</h1>
+
+    <h3>An image with a mask layer image:</h3>
+    <div class="mask1">
+        <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+    </div>
+
+    <h3>Original image:</h3>
+    <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+
+</body>
+
+</html>
