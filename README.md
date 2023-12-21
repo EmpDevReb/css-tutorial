@@ -10,9 +10,9 @@
 ### Set up
 
 1. Open file in Code app.
-2. Open file in web browser to see if it works on not .
+2. Open file in web browser to see if it works on not.
 
 ## Notes
 
 - SCSS files don't need to run look at CSS outputs and HTML).
-- No features. Only, CSS, HTML and SCSS that doesn't need run.
+- No features. Only, CSS, HTML and SCSS that doesn't need to run.
